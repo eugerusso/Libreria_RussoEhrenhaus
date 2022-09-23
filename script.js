@@ -119,3 +119,17 @@ function deleteTodo(todoId){
     //re-render
     renderTodos();
 }
+
+//toastify con el botón add 
+const btn = document.querySelector("#btn");
+btn.addEventListener('click', () => {   
+    Toastify({
+        text: "Tarea agregada",
+        duration: 3000,
+        gravity: "top",
+        position:"right",
+        style: {
+            background: "#1397cc"
+        }
+    }).showToast();
+})
